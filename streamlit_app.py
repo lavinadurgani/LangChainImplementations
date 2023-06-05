@@ -10,6 +10,7 @@ openai_api_key = st.sidebar.text_input('Enter your OpenAI API Key : ')
 def generate_response(input_text):
   llm = OpenAI(temperature=0.7, openai_api_key=openai_api_key)
   st.info(llm(input_text))
+  st.info(llm(input_text))
   
 
 with st.form('my_form'):
