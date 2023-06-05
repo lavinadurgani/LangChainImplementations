@@ -5,7 +5,7 @@ st.title('🎈Ask Langchain and ChatGPT')
 
 st.write('Hello world!')
 
-openai_api_key = st.sidebar.text_input('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')
+openai_api_key = st.sidebar.text_input('Enter your OpenAI API Key : ')
 
 def generate_response(input_text):
   llm = OpenAI(temperature=0.7, openai_api_key=openai_api_key)
